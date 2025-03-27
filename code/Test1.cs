@@ -47,9 +47,6 @@ public sealed class Test1
 
         // Click button:has-text("計算")
         await page.ClickAsync("button:has-text(\"計算\")");
-
-        // 等待 "BMI：" 元素出現，並設置超時時間
-        //page.WaitForSelectorAsync("text=BMI：", new WaitForSelectorOptions { Timeout = 60000 });
         
         // 取得包含 "BMI：" 的文字區塊
         var ret = page.TextContentAsync("text=BMI :  ").GetAwaiter().GetResult();
