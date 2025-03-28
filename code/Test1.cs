@@ -32,10 +32,8 @@ public sealed class Test1
 
         // Open new page
         var Page = await context.NewPageAsync();
-
-        //await Page.GotoAsync("https://rc.teammodel.cn/login");
-
-        await Page.GotoAsync("https://www.teammodel.cn/login");
+       
+        await Page.GotoAsync("https://www.xxx.net/login");
         
         
         await Page.Locator(".login-box").First.ClickAsync();
